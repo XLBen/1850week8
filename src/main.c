@@ -13,13 +13,13 @@
 └────────────────────────┘
 */
 
-#include "pgm_image.h" 
-#include "pgm_io.h"    
-#include "pgm_process.h"
-#include "pgm_display.h"
+#include "include/pgm_display.h" 
+#include "include/pgm_io.h"    
+#include "include/pgm_process.h"
+#include "include/pgm_display.h"
+
 int main() {
     int choice;
-    PGMImage *img = NULL;
     PGMImage *processed_img = NULL;
     char filename[256];
     while (1) {
