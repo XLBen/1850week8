@@ -12,13 +12,11 @@
 │ }                      │
 └────────────────────────┘
 */
-// src/main.c
-#include "include/pgm_image.h"
-#include "include/pgm_io.h"
-#include "include/pgm_process.h"
-#include "include/pgm_display.h"
-#include <stdio.h>
 
+#include "pgm_image.h" 
+#include "pgm_io.h"    
+#include "pgm_process.h"
+#include "pgm_display.h"
 int main() {
     int choice;
     PGMImage *img = NULL;
@@ -40,6 +38,7 @@ int main() {
                     scanf("%s", filename);
                     if (pgm_save_image(filename, img)) {printf("saved\n");
                     }
+                }
                 break;
             case 3:
                 if (img) {
