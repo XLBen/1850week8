@@ -1,4 +1,4 @@
-# 编译器及编译标志
+
 CC = gcc
 CFLAGS = -Wall -Wextra -I./include
 
