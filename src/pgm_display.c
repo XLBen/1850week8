@@ -26,17 +26,17 @@ void pgm_print_pixels(const PGMImage *img) {
 }
 
 void pgm_display_menu(void) {
-    printf("----- PGM 工具菜单 -----\n");
-    printf("1. 读取图像\n");
-    printf("2. 保存图像\n");
-    printf("3. 反转图像\n");
-    printf("4. 旋转图像\n");
-    printf("5. 退出\n");
+    printf("----- PGM menu -----\n");
+    printf("1.read\n");
+    printf("2.save\n");
+    printf("3.turn\n");
+    printf("4.spin\n");
+    printf("5.quit\n");
 }
 
 int pgm_get_user_choice(void) {
     int choice;
-    printf("请输入选项：");
+    printf("Enter：");
     scanf("%d", &choice);
     return choice;
 }

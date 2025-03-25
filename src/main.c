@@ -30,27 +30,24 @@ int main() {
         choice = pgm_get_user_choice();
         switch (choice) {
             case 1:
-                printf("请输入要读取的图像文件名：");
+                printf("Enter program name:");
                 scanf("%s", filename);
                 img = pgm_read_image(filename);
-                if (img) {
-                    printf("图像读取成功！\n");
-                    pgm_print_info(img);
-                }
+                if (img) {pgm_print_info(img);}
                 break;
             case 2:
                 if (img) {
-                    printf("请输入要保存的图像文件名：");
+                    printf("enter the program name you want save:");
                     scanf("%s", filename);
                     if (pgm_save_image(filename, img)) {
-                        printf("图像保存成功！\n");
+                        printf("saved\n");
                     }
                 }
                 break;
             case 3:
                 if (img) {
                     processed_img = pgm_invert_colors(img);
-                    printf("图像颜色已反转！\n");
+                    printf("turned\n");
                     pgm_print_info(processed_img);
                     pgm_print_pixels(processed_img);
                     pgm_free_image(processed_img);
@@ -59,7 +56,7 @@ int main() {
             case 4:
                 if (img) {
                     processed_img = pgm_rotate_image(img);
-                    printf("图像已旋转！\n");
+                    printf("spined\n");
                     pgm_print_info(processed_img);
                     pgm_print_pixels(processed_img);
                     pgm_free_image(processed_img);
@@ -67,10 +64,10 @@ int main() {
                 break;
             case 5:
                 pgm_free_image(img);
-                printf("退出程序！\n");
+                printf("quited\n");
                 return 0;
             default:
-                printf("无效选项，请重新输入！\n");
+                printf("error\n");
                 break;
         }
     }
