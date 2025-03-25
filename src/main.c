@@ -24,7 +24,6 @@ int main() {
     PGMImage *img = NULL;
     PGMImage *processed_img = NULL;
     char filename[256];
-
     while (1) {
         pgm_display_menu();
         choice = pgm_get_user_choice();

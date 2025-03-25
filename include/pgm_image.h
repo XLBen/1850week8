@@ -29,7 +29,6 @@ PGMImage *pgm_create_image(int width, int height, int max_gray);
 
 void pgm_free_image(PGMImage *img);
 
-
 void pgm_print_info(const PGMImage *img);
 
 #endif 

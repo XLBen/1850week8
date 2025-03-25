@@ -18,8 +18,7 @@ PGMImage *pgm_invert_colors(const PGMImage *img) {
     PGMImage *new_img = pgm_create_image(img->width, img->height, img->max_gray);
     if (!new_img) return NULL;
     for (int i = 0; i < img->width * img->height; i++) {
-        new_img->data[i] = img->max_gray - img->data[i];
-    }
+        new_img->data[i] = img->max_gray - img->data[i];}
     return new_img;
 }
 

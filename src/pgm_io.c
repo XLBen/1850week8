@@ -17,8 +17,7 @@ PGMImage *pgm_read_image(const char *filename) {
     FILE *fp = fopen(filename, "rb");
     if (!fp) {
         fprintf(stderr, "error %s\n", filename);
-        return NULL;
-    }
+        return NULL;}
 
     fclose(fp);
     return NULL;  
