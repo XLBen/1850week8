@@ -10,7 +10,7 @@
 └────────────────────────┘
 */
 // src/pgm_process.c
-#include "pgm_process.h"
+#include "include/pgm_process.h"
 #include <stdlib.h>
 
 PGMImage *pgm_invert_colors(const PGMImage *img) {

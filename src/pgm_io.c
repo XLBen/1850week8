@@ -9,7 +9,7 @@
 │ - pgm_save_image()     │
 └────────────────────────┘
 */
-#include "pgm_io.h"
+#include "include/pgm_io.h"
 #include <stdio.h>
 #include <stdlib.h>
 

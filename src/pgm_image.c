@@ -9,7 +9,7 @@
 │ - pgm_free_image()     │
 └────────────────────────┘
 */
-#include "pgm_image.h"
+#include "include/pgm_image.h"
 #include <stdio.h>
 #include <stdlib.h>
 

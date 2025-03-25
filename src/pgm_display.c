@@ -12,7 +12,7 @@
 └────────────────────────┘
 */
 // src/pgm_display.c
-#include "pgm_display.h"
+#include "include/pgm_display.h"
 #include <stdio.h>
 
 void pgm_print_pixels(const PGMImage *img) {
